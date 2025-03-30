@@ -39,7 +39,7 @@ time_function_type              = 1
 # IMPORTANT: do NOT put quote signs around the file name, just put the file name itself otherwise the run will stop
 name_of_source_file             = YYYYYYYY       # Only for option 8 : file containing the source wavelet
 burst_band_width                = 0.             # Only for option 9 : band width of the burst
-f0                              = 10.0           # dominant source frequency (Hz) if not Dirac or Heaviside
+f0                              = 5.0           # dominant source frequency (Hz) if not Dirac or Heaviside
 tshift                          = 0.0            # time shift when multi sources (if one source, must be zero)
 ## Force source
 # angle of the source (for a force only); for a plane wave, this is the incidence angle; for moment tensor sources this is unused
@@ -55,3 +55,20 @@ factor                          = 1.d10          # amplification factor
 vx                              = 0.0            # Horizontal source velocity (m/s)
 vz                              = 0.0            # Vertical source velocity (m/s)
 
+## Source 2
+source_surf = .false.
+xs = 2000.0
+zs = 2500.0
+source_type = 1
+time_function_type = 1
+name_of_source_file             = YYYYYYYY       # Only for option 8 : file containing the source wavelet
+burst_band_width                = 0.    
+f0 = 5.0
+tshift = 3.0
+anglesource = 0.
+Mxx = 1.
+Mzz = 1.
+Mxz = 0.
+factor = 1.0d10
+vx                              = 0.0            # Horizontal source velocity (m/s)
+vz                              = 0.0   
